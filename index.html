@@ -3,7 +3,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PageSpeed Practice</title>
-
 <style>
 @font-face {
   font-family: 'Roboto';
@@ -11,17 +10,14 @@
   font-weight: 400;
   src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/CrYjSnGjrRCn0pd9VQsnFOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
 }
-
 body {
     color: #777;
     font-family: Roboto, sans-serif;
 }
-
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
 }
-
 /*
 Add transition to containers so they can push in and out.
 */
@@ -32,9 +28,7 @@ Add transition to containers so they can push in and out.
     -moz-transition: all 0.2s ease-out;
     -ms-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-
+    transition: all 0.2s ease-out;}
 /*
 This is the parent `<div>` that contains the menu and the content area.
 */
@@ -89,9 +83,6 @@ The content `<div>` is where all your content goes.
     font-weight: 300;
     color: #888;
 }
-
-
-
 /*
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
 appears on the left side of the page.
@@ -155,7 +146,6 @@ appears on the left side of the page.
         #menu .pure-menu-selected a {
             color: #fff;
         }
-
     /*
     This styles the menu heading.
     */
@@ -164,7 +154,6 @@ appears on the left side of the page.
         color: #fff;
         margin: 0;
     }
-
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
 
 /*
@@ -189,7 +178,6 @@ small screens.
     height: auto;
     padding: 2.1em 1.6em;
 }
-
     .menu-link:hover,
     .menu-link:focus {
         background: #000;
@@ -199,7 +187,6 @@ small screens.
         position: relative;
         display: block;
     }
-
     .menu-link span,
     .menu-link span:before,
     .menu-link span:after {
@@ -207,14 +194,12 @@ small screens.
         width: 100%;
         height: 0.2em;
     }
-
         .menu-link span:before,
         .menu-link span:after {
             position: absolute;
             margin-top: -0.6em;
             content: " ";
         }
-
         .menu-link span:after {
             margin-top: 0.6em;
         }
@@ -232,33 +217,25 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         padding-left: 2em;
         padding-right: 2em;
     }
-
     #layout {
         padding-left: 150px; /* left col width "#menu" */
         left: 0;
     }
-    #menu {
+  #menu {
         left: 150px;
     }
-
     .menu-link {
         position: fixed;
         left: 150px;
         display: none;
     }
-
-    #layout.active .menu-link {
+ #layout.active .menu-link {
         left: 150px;
     }
 }
-    
 </style>    
-    
-    
-    
 </head>
 <body>
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure.css?v=2134">
 <link rel="stylesheet" href="side-menu.css">
 <div id="layout">
     <!-- Menu toggle -->
@@ -266,15 +243,12 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         <!-- Hamburger icon -->
         <span></span>
     </a>
-
     <div id="menu">
         <div class="pure-menu pure-menu-open">
             <a class="pure-menu-heading" href="#" style="font-family:sans-serif">Excercise</a>
-
             <ul>
                 <li><a href="#main" style="font-family:sans-serif">PageSpeed</a></li>
                 <li class="menu-item-divided"><a href="#howto" style="font-family:sans-serif">Why</a></li>
-
                 <li class="menu-item-divided">
                     <a href="#resizing" style="font-family:sans-serif">Another link</a>
                 </li>
